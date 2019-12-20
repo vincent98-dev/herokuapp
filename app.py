@@ -1,13 +1,14 @@
-from flask import Flask
+from flask import Flask, render-template
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "Ciao mondo!"
-
+    scritta= "Ciao mondo!"
+    return render_template("base.html", testo=scritta ) 
 @app.route('/info')
 def info():
-    return "informazioni"
+    scritta= "informazioni"
+    return render_template("base.html", testo=scritta ) 
 
 
 if __name__ == '__main__':
