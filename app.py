@@ -8,7 +8,7 @@ def index():
     testo="Ciao mondo!"
     return render_template("base.html", 
             titolo=titolo,
-            testo?testo,
+            testo=testo,
             bottone=bottone)
 
 @app.route('/info')
@@ -18,8 +18,8 @@ def info():
     testo="informazioni"
     return render_template("base.html", 
             titolo=titolo,
-            testo?testo,
-            bottone=bottone) ) 
+            testo=testo,
+            bottone=bottone) 
 
 if __name__ == '__main__':
     app.run()
